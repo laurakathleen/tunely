@@ -94,6 +94,13 @@ $(document).ready(function() {
       //console.log(json);
       renderAlbum(json);
     }
+
+    $('#albums').on('click', '.add-song', function(event){
+      event.preventDefault();
+      console.log('click');
+      var id=$(this).closest('.album').data('albumId');
+      console.log('id', id);
+    })
 });
 
 
