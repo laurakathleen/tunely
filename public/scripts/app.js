@@ -51,7 +51,7 @@ $(document).ready(function() {
   function renderAlbum(album) {
     // console.log('rendering album:', album);
     // $album.empty();
-    var albumsHtml = template({ albums: album });
+    var albumsHtml = template({ albums: sampleAlbums });
     $album.append(albumsHtml);
     console.log(sampleAlbums);
   };
