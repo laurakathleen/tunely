@@ -67,6 +67,8 @@ $(document).ready(function() {
     error: onError
   });
 
+  //render all albums
+  //for loop because #each isn't specified in html:
   function onSuccess(json){
     allAlbums = json;
     for (var i=0; i<allAlbums.length; i++){
